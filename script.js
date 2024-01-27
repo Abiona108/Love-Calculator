@@ -15,7 +15,8 @@ function submit(){
     }else{
         var love = Math.ceil(Math.random()*100)
         answer.innerHTML = love+'%'
-        answer.style.display = 'block' 
+        answer.style.display = 'block'
+        errorMessage.style.display ="none"; 
         
         if (love < 40) {
             message.innerHTML = `${firstname.value} and ${partnername.value}, you both are not a good match.💔😢`
