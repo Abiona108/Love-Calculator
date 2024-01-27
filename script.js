@@ -25,7 +25,7 @@ function submit(){
         } else if(love < 70){
             message.innerHTML = `❤${firstname.value} and ${partnername.value}, Your relation is good and you will make a good couple.❤`
             message.style.display = 'block'
-            message.style.background = `darkblue`
+            message.style.background = `deeppink`
         } else if(love <= 100){
             message.innerHTML = `💖${firstname.value} and ${partnername.value}, You are both a match made from Heaven💖`
             message.style.display = 'block'
