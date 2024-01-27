@@ -2,11 +2,54 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+    background-image: url(images/pexels-natasha-babenko-2565348.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Tahoma, sans-serif;
 }
+.container{
+    box-shadow: 0 1px 8px deeppink;
+}
+.header h1{
+    text-decoration: wavy;
+    text-shadow: 4px 2px  black;
+    background-color: deeppink;
+}
+.inputs input{
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    width: 260px;
+    outline: 3px solid grey;
+    background: transparent;
+    color: white;
+}
+.inputs span{
+    font-size: 25px;    
+}
+.calculate button{
+    background: transparent;
+    border: 2px solid gray;
+    color:white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.calculate button:hover{
+    border: 2px solid deeppink;
+    background: deeppink;
+    color: white;
+    cursor: pointer;
+}
+.answer{
+    background-color:rgb(164, 11, 93);
+    width: 15%;
+}
+
