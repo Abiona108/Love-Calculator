@@ -19,7 +19,7 @@ body{
 }
 .header h1{
     text-decoration: wavy;
-    text-shadow: 4px 2px  black;
+    text-shadow: 4px 2px   black;
     background-color: deeppink;
 }
 .inputs input{
@@ -48,8 +48,15 @@ body{
     color: white;
     cursor: pointer;
 }
-.answer{
+#answer{
     background-color:rgb(164, 11, 93);
     width: 15%;
+    display: none;
+}
+#errorMessage{
+    display: none;
+}
+#message{
+    display: none;
 }
 
