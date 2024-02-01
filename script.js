@@ -1,3 +1,6 @@
+var songToPlay_2 = new Audio("audio/pity.mp3")
+songToPlay_3.play()
+songToPlay.pause()
 function submit(){
     const firstname = document.getElementById('firstname')
     const partnername = document.getElementById('partnername')
@@ -21,20 +24,22 @@ function submit(){
         if (love < 40) {
             message.innerHTML = `${firstname.value} and ${partnername.value}, you both are not a good match.💔😢`
             message.style.display = 'block'
-            message.style.color = `black`
-            message.style.background = `orange`
+            message.style.color = `white`
+            message.style.background = `transparent`
+            message.style.fontSize = `1.5em`
         } else if(love < 70){
             message.innerHTML = `❤${firstname.value} and ${partnername.value}, Your relation is good and you will make a good couple.❤`
             message.style.display = 'block'
             message.style.background = `deeppink`
+            message.style.fontSize = `1.5em`
         } else if(love <= 100){
             message.innerHTML = `💖${firstname.value} and ${partnername.value}, You are both a match made from Heaven💖`
             message.style.display = 'block'
-            message.style.color = `black`
-            message.style.background = `green`
+            message.style.color = `white`
+            message.style.background = `transparent`
+            message.style.fontSize = `1.5em`
         }
         firstname.value = '';
         partnername.value ='';
     }
-
 }
