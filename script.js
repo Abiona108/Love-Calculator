@@ -1,3 +1,9 @@
+var audioOne = document.getElementById('audioPlayer');
+var audioTwo = document.getElementById('audioPlayer2');
+var audioThree = document.getElementById('audioPlayer3');
+var audioFour = document.getElementById('audioPlayer4');
+
+
 function submit(){
     const firstname = document.getElementById('firstname')
     const partnername = document.getElementById('partnername')
@@ -19,22 +25,35 @@ function submit(){
         errorMessage.style.display ="none";
         
         if (love < 40) {
-            message.innerHTML = `${firstname.value} and ${partnername.value}, you both are not a good match.💔😢`
+            message.innerHTML = `${firstname.value} and ${partnername.value}, you two are not a good match. Move on with your life!💔😢`
             message.style.display = 'block'
             message.style.color = `white`
             message.style.background = `transparent`
             message.style.fontSize = `1.5em`
+            audioThree.play();
+            audioOne.pause();
+            audioTwo.pause();
+            audioFour.pause();
+
         } else if(love < 70){
-            message.innerHTML = `❤${firstname.value} and ${partnername.value}, Your relation is good and you will make a good couple.❤`
+            message.innerHTML = `${firstname.value} 💖 ${partnername.value}, You two are a good match and will make a good couple.`
             message.style.display = 'block'
             message.style.background = `deeppink`
             message.style.fontSize = `1.5em`
+            audioFour.play();
+            audioThree.pause();
+            audioOne.pause();
+            audioTwo.pause();
         } else if(love <= 100){
-            message.innerHTML = `💖${firstname.value} and ${partnername.value}, You are both a match made from Heaven💖`
+            message.innerHTML = `💖${firstname.value} & ${partnername.value}, You two are a match made in Heaven💖`
             message.style.display = 'block'
             message.style.color = `white`
             message.style.background = `transparent`
             message.style.fontSize = `1.5em`
+            audioTwo.play();
+            audioThree.pause();
+            audioOne.pause();
+            audioFour.pause();
         }
         firstname.value = '';
         partnername.value ='';
